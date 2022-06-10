@@ -41,11 +41,17 @@ class Vampire {
   changeDrink(newDrink){
     this.thirst = newDrink;
   }
+  changePet(newPet){
+    this.pet = newPet;
+  }
 }
 var name1 = new Vampire ("Percy");
 console.log(name1)
 
 name1.changeDrink(false);
+console.log(name1);
+
+name1.changePet("monkey");
 console.log(name1);
 
 //  Write a Dragon class
@@ -62,8 +68,19 @@ console.log(name1);
       this.color = color;
       this.isHungry = true;
     }
-  }
 
+    full(notHungry) {
+      this.isHungry = notHungry;
+  }
+}
+
+var dragon1 = new Dragon("Strider", "Sam", "Blue");
+console.log(dragon1);
+
+dragon1.full(false);
+console.log(dragon1);
+
+// I am not sure how to input a conditionals within the method.
 
 
 //  BIG CHALLNEGE: Write a Hobbit class
@@ -79,6 +96,17 @@ class Hobbit {
     this.name = name;
     this.disposition = disposition;
     this.age = 0;
-
+    this.isAdult = false;
+    this.isOld = false;
+    this.hasRing = false;
+  }
+  celebrateBirthday(increaseAge){
+    this.age = increaseAge;
   }
 }
+
+var hobbit1 = new Hobbit("Tim", "Friendly");
+console.log(hobbit1);
+
+hobbit1.celebrateBirthday(1);
+console.log(hobbit1);
