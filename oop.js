@@ -110,3 +110,4 @@ console.log(hobbit1);
 
 hobbit1.celebrateBirthday(1);
 console.log(hobbit1);
+// I'm not sure how to add a a for statement and if statement into the method or class.  I've run out of time before my final eval. 
