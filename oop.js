@@ -70,17 +70,21 @@ console.log(name1);
     }
 
     full(notHungry) {
-      this.isHungry = notHungry;
+      if (this.isHungry = notHungry); {
+        if (notHungry = 4) {
+          this.isHungry = false;
+        }
+      }
   }
 }
 
 var dragon1 = new Dragon("Strider", "Sam", "Blue");
 console.log(dragon1);
 
-dragon1.full(false);
+dragon1.full(4);
 console.log(dragon1);
 
-// I am not sure how to input a conditionals within the method.
+// Edit:  I ran out of time preparing for my final assessement, but I figured out how to add a conditional this morning.  I'm not sure if this is correct, but I was able to get the correct output.  I am not sure how to input a conditionals within the method.
 
 
 //  BIG CHALLNEGE: Write a Hobbit class
