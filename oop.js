@@ -92,22 +92,24 @@ console.log(dragon1);
 //  it should have an isOld property that defaults to false. once a Hobbit is 101, it is old.
 //  it should have a hasRing property. If the Hobbit's name is "Frodo", true, if not, false.
 class Hobbit {
-  constructor(name, disposition){
-    this.name = name;
-    this.disposition = disposition;
-    this.age = 0;
-    this.isAdult = false;
-    this.isOld = false;
-    this.hasRing = false;
-  }
-  celebrateBirthday(increaseAge){
-    this.age = increaseAge;
-  }
+  constructor(name,disposition) {
+  this.name=name;
+  this.disposition=disposition;
+  this.age=0;
+  this.isAdult= false;
+  this.isOld= false;
+  this.hasRing= false
 }
-
-var hobbit1 = new Hobbit("Tim", "Friendly");
-console.log(hobbit1);
-
-hobbit1.celebrateBirthday(1);
-console.log(hobbit1);
-// I'm not sure how to add a a for statement and if statement into the method or class.  I've run out of time before my final eval. 
+celebrateBirthday(yay){
+   if (this.name === "Frodo")
+   {     this.hasRing = true};
+if (yay > 33) {
+  this.isAdult=true; }
+  if (yay >= 101){
+  this.isOld = true};
+;} }
+var hob1 = new Hobbit ("Frodo","tall");
+console.log(hob1);
+hob1.celebrateBirthday(130);
+console.log(hob1)
+// I'm not sure how to add a a for statement and if statement into the method or class.  I've run out of time before my final eval.
